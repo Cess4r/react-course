@@ -1,21 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { CONTACT } from '../../models/contact.class';
 import ContactComp from '../pure/contact';
-import { LEVELS } from '../../models/levels.enum';
 
-const TaskListComponent=()=> {
-    const defaultTask = new CONTACT('Example', 'ffff', false, LEVELS.NORMAL)
+const ContactList =()=> {
+    const defaultContact = new CONTACT('Eduardo', 'Clys', 'eduard@gmail.com', false)
     return (
         <div>
             <div>
-                Your Tasks:
+                Your Contacts:
             </div>
             <div>
-                <ContactComp task={ defaultTask }></ContactComp>
+                <ContactComp contk={defaultContact}></ContactComp>
             </div>
         </div>
     );
 };
 
-export default TaskListComponent
+export default ContactList

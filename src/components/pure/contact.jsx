@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 import { CONTACT } from '../../models/contact.class';
 
 
-const ContactComp = ({ contact }) => {
+const ContactComp = ({ contk }) => {
     return (
         <div>
             <h2>
-                Nombre: { contact.nombre }
+                Nombre: { contk.nombre }
             </h2>
             <h3>
-                apellido: { contact.apellido }
+                apellido: { contk.apellido }
             </h3>
             <h4>
-                Email: { contact.level }
+                Email: { contk.email }
             </h4>
             <h5>
-                Conectado: { contact.conectado ? 'Si':'No' }
+                { contk.conectado ? 'Conectado':'Desconectado' }
             </h5>
         </div>
     );
