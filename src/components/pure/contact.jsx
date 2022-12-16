@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { CONTACT } from '../../models/contact.class';
 
 
-const ContactComp = ({ contk }) => {
+const ContactComp = ({ contk}) => {
     return (
         <div>
             <h2>
@@ -24,7 +24,7 @@ const ContactComp = ({ contk }) => {
 
 
 ContactComp.propTypes = {
-    contk: PropTypes.instanceOf(CONTACT)
+    contk: PropTypes.instanceOf(CONTACT).isRequired,
 };
 
 export default ContactComp;
